@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" type="text/css" rel="stylesheet" />
+    <meta name="vieuwport" content= "width=device-width, initial-scale=1.0" /> 
+    <title>Gegroet</title>
+
+</head>
+<body>
+<h1>Festival Seizoen!</h1>
+<img src="festival.jpg">
+
+<p>Voer je leeftijd in en klik op de knop om te zien of je het al mag bezoeken.</p>
+
+<input id="leeftijd" value="16" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="vergelijk"></p>
+
+<script>
+function myFunction() {
+  var leeftijd, feest;
+  leeftijd = document.getElementById("leeftijd").value;
+  feest = (leeftijd < 18) ? "Je bent helaas nog te jong":"Wat een geluk, je bent oud genoeg";
+  document.getElementById("vergelijk").innerHTML = feest + " om te gaan.";
+}
+</script>
+
+</body>
+</html>
+
